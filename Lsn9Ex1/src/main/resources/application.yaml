@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: API_GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: Microservice1
+          uri: http://localhost:8081/
+          Predicates:
+            - Path=/serviceA/**
+        - id: Microservice2
+          uri: http://localhost:8082/
+          Predicates:
+            - Path=/serviceB/**

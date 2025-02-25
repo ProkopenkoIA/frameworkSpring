@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Задание №3</title>
+</head>
+<body>
+<h1>Введите данные в поле ввода и нажмите кнопку "Ввод": </h1>
+<form action="#" th:action="@{/task}" th:object="${input}" method="post">
+  <input type="text" th:field="*{input}" />
+  <input type="submit" value="Ввод" />
+</form>
+<h1>Результат ввода: </h1>
+<h2 th:text="${input}"></h2>
+</body>
+</html>

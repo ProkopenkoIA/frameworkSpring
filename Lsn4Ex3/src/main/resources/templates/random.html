@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+</head>
+<body>
+<h1>Min число: <span
+        th:text="${min}">MIN</span></h1>
+<h1>Max число: <span
+        th:text="${max}">MAX</span></h1>
+<h1>Случайное число: <span
+        th:text="${number}">NUMBER</span></h1>
+<h1>Минимум по умолчанию: <span
+        th:text="${min_default}"></span></h1>
+<h1>Максимум по умолчанию: <span
+        th:text="${max_default}"></span></h1>
+</body>
+</html>
